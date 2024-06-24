@@ -1,9 +1,9 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 
 import { ProductsController } from './products/products.controller';
-import { LoggerMiddleware } from './commom/middleware/logger.middleware';
+import { LoggerMiddleware } from '../commom/middleware/logger.middleware';
 import { SequelizeModule } from '@nestjs/sequelize';
-import { dataBaseConfig } from './database/database.config';
+import { dataBaseConfig } from '../database/database.config';
 import { ProductsModule } from './products/products.module';
 
 @Module({
